@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
+body {
+  background: linear-gradient(to right bottom, #fffdfd62, #79766ca8),
+    url("../images/sw_background.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.read {
+  font-family: "Cairo", sans-serif;
+  color: #3f3e3e;
+  font-size: 1em;
+}
+
+input[type="text"] {
+  float: right;
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url("../images/zoom.png");
+  background-position: 14px 16px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type="text"]:focus {
+  width: 100%;
+  outline: none;
+}
+
+.gallery-block {
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+.gallery-block .heading {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.gallery-block .heading h2 {
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.gallery-block.cards-gallery h6 {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.gallery-block.cards-gallery .card {
+  transition: 0.4s easy;
+}
+.gallery-block.cards-gallery .card img {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+}
+.gallery-block.cards-gallery .card-body {
+  text-align: center;
+}
+.gallery-block.cards-gallery .card-body p {
+  font-size: 15px;
+}
+.gallery-block.cards-gallery a {
+  color: #212529;
+}
+.gallery-block.cards-gallery a:hover {
+  text-decoration: none;
+}
+.gallery-block.cards-gallery .card {
+  margin-bottom: 30px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 576px) {
+  .gallery-block .transform-on-hover:hover {
+    transform: translateY(-10px) scale(1.02);
+    transition: 0.6s;
+    box-shadow: 0px 10px 10px rgba(19, 19, 19, 0.041) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 80%;
+  }
+}
+
+.overlay {
+  font-family: "Cairo", sans-serif;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(223, 219, 219);
+  background-color: rgba(214, 214, 214, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #543434;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+.menu-btn {
+  font-size: 60px;
+  cursor: pointer;
+  color: #543434;
+}
+.body {
+  background-color: rgb(252, 252, 252);
+  padding: 1.4em;
+  box-shadow: -1px 9px 5px -3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 9px 5px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 9px 5px -3px rgba(0, 0, 0, 0.75);
+}
+.body p {
+  font-size: 1.3em;
+}
+.body p i {
+  color: rgb(204, 204, 204);
+  margin-left: 2px;
+}
+.body-img {
+  width: 100%;
+}
+
+.not-found {
+  color: #543434;
+  font-family: "Cairo", sans-serif;
+}
